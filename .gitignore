@@ -2,8 +2,9 @@
 01-aulas-backend/node_modules/
 01-aulas-frontend/node_modules/
 01-aulas-typescript/node_modules/
-01-aulas-typescript/dist/*
-
+01-aulas-typescript/dist/
+02-primeiro-projeto-node/node_modules/
+02-primeiro-projeto-node/dist/
 
 # OSX
 #
