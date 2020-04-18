@@ -1,50 +1,52 @@
 
 01-aulas-backend/node_modules/
 01-aulas-frontend/node_modules/
+01-aulas-typescript/node_modules/
+01-aulas-typescript/dist/*
 
 
 # OSX
 #
-mobile/.DS_Store
+01-aulas-reactnative/.DS_Store
 
 # Xcode
 #
 build/
-mobile/*.pbxuser
-mobile/!default.pbxuser
-mobile/*.mode1v3
-mobile/!default.mode1v3
-mobile/*.mode2v3
-mobile/!default.mode2v3
-mobile/*.perspectivev3
-mobile/!default.perspectivev3
-mobile/xcuserdata
-mobile/*.xccheckout
-mobile/*.moved-aside
-mobile/DerivedData
-mobile/*.hmap
-mobile/*.ipa
-mobile/*.xcuserstate
+01-aulas-reactnative/*.pbxuser
+01-aulas-reactnative/!default.pbxuser
+01-aulas-reactnative/*.mode1v3
+01-aulas-reactnative/!default.mode1v3
+01-aulas-reactnative/*.mode2v3
+01-aulas-reactnative/!default.mode2v3
+01-aulas-reactnative/*.perspectivev3
+01-aulas-reactnative/!default.perspectivev3
+01-aulas-reactnative/xcuserdata
+01-aulas-reactnative/*.xccheckout
+01-aulas-reactnative/*.moved-aside
+01-aulas-reactnative/DerivedData
+01-aulas-reactnative/*.hmap
+01-aulas-reactnative/*.ipa
+01-aulas-reactnative/*.xcuserstate
 
 # Android/IntelliJ
 #
-mobile/build/
-mobile/.idea
-mobile/.gradle
-mobile/local.properties
-mobile/*.iml
+01-aulas-reactnative/build/
+01-aulas-reactnative/.idea
+01-aulas-reactnative/.gradle
+01-aulas-reactnative/local.properties
+01-aulas-reactnative/*.iml
 
 # node.js
 #
-mobile/node_modules/
-mobile/npm-debug.log
-mobile/yarn-error.log
+01-aulas-reactnative/node_modules/
+01-aulas-reactnative/npm-debug.log
+01-aulas-reactnative/yarn-error.log
 
 # BUCK
-mobile/buck-out/
-mobile/\.buckd/
-mobile/*.keystore
-mobile/!debug.keystore
+01-aulas-reactnative/buck-out/
+01-aulas-reactnative/\.buckd/
+01-aulas-reactnative/*.keystore
+01-aulas-reactnative/!debug.keystore
 
 # fastlane
 #
@@ -53,14 +55,13 @@ mobile/!debug.keystore
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/
 
-mobile/*/fastlane/report.xml
-mobile/*/fastlane/Preview.html
-mobile/*/fastlane/screenshots
+01-aulas-reactnative/*/fastlane/report.xml
+01-aulas-reactnative/*/fastlane/Preview.html
+01-aulas-reactnative/*/fastlane/screenshots
 
 # Bundle artifact
 *.jsbundle
 
 # CocoaPods
-mobile/ios/Pods/
-
+01-aulas-reactnative/ios/Pods/
 
