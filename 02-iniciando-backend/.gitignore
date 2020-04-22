@@ -1,0 +1,12 @@
+02-iniciando-backend/.idea/
+02-iniciando-backend/.vscode/
+02-iniciando-backend/node_modules/
+02-iniciando-backend/build/
+02-iniciando-backend/temp/
+
+02-iniciando-backend/tmp/*
+02-iniciando-backend/!tmp/.gitkeep
+
+
+
+

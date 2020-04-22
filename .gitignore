@@ -1,11 +1,22 @@
 
 01-aulas-backend/node_modules/
+
 01-aulas-frontend/node_modules/
+
 01-aulas-typescript/node_modules/
 01-aulas-typescript/dist/
+
 02-primeiro-projeto-node/node_modules/
 02-primeiro-projeto-node/dist/
 02-primeiro-projeto-node/.vscode
+
+02-iniciando-backend/.idea/
+02-iniciando-backend/.vscode/
+02-iniciando-backend/node_modules/
+02-iniciando-backend/build/
+02-iniciando-backend/temp/
+02-iniciando-backend/tmp/*
+02-iniciando-backend/!tmp/.gitkeep
 
 
 # OSX
