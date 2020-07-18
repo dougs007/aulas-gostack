@@ -7,11 +7,11 @@ import logoImg from '../../assets/logo.svg';
 
 import { Header, RepositoryInfo, Issues } from './styles';
 
-interface RepositoryParams {
+interface IRepositoryParams {
   repository: string;
 }
 
-interface Repository {
+interface IRepository {
   full_name: string;
   description: string;
   stargazers_count: string;
@@ -21,6 +21,7 @@ interface Repository {
     login: string;
     avatar_url: string;
   };
+  html_url: string;
 }
 
 interface Issue {
@@ -33,10 +34,10 @@ interface Issue {
 }
 
 const Repository: React.FC = () => {
-  const [repository, setRepository] = useState<Repository | null>(null);
+  const [repository, setRepository] = useState<IRepository | null>(null);
   const [issues, setIssues] = useState<Issue[]>([]);
 
-  const { params } = useRouteMatch<RepositoryParams>();
+  const { params } = useRouteMatch<IRepositoryParams>();
 
   useEffect(() => {
     api.get(`repos/${params.repository}`).then((response) => {
@@ -60,10 +61,16 @@ const Repository: React.FC = () => {
       {repository && (
         <RepositoryInfo>
           <header>
-            <img
-              src={repository.owner.avatar_url}
-              alt={repository.owner.login}
-            />
+            <a
+              href={repository.html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={repository.owner.avatar_url}
+                alt={repository.owner.login}
+              />
+            </a>
             <div>
               <strong>{repository.full_name}</strong>
               <p>{repository.description}</p>

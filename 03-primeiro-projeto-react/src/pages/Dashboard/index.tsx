@@ -6,7 +6,7 @@ import api from '../../services/api';
 
 import { Title, Form, Repositories, Error } from './styles';
 
-interface Repository {
+interface IRepository {
   full_name: string;
   description: string;
   owner: {
@@ -16,9 +16,11 @@ interface Repository {
 }
 
 const Dashboard: React.FC = () => {
+
   const [newRepo, setNewRepo] = useState('');
   const [inputError, setInputError] = useState('');
-  const [repositories, setRepositories] = useState<Repository[]>(() => {
+
+  const [repositories, setRepositories] = useState<IRepository[]>(() => {
     const storagedRepositories = localStorage.getItem(
       '@GithubExplorer:repositories',
     );
@@ -47,7 +49,7 @@ const Dashboard: React.FC = () => {
     }
 
     try {
-      const response = await api.get<Repository>(`repos/${newRepo}`);
+      const response = await api.get<IRepository>(`repos/${newRepo}`);
 
       const repository = response.data;
 
@@ -62,7 +64,7 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <img src={logoImg} alt="GitHub Explorer" />
-      <Title>Explore repositório no GitHub </Title>
+      <Title>Explore repositórios no GitHub </Title>
 
       <Form hasError={!!inputError} onSubmit={handleAddRepository}>
         <input
